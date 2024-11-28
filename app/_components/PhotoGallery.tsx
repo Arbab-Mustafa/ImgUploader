@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -71,7 +72,7 @@ const PhotoGallery = ({ photos, fetchPhotos }: PhotoGalleryProps) => {
       {photos.length === 0 ? (
         <p className="text-xl text-center py-2 ">No photos available.</p>
       ) : (
-        photos.map((photo: any) => (
+        photos.map((photo) => (
           <div
             key={photo.id}
             className="bg-white shadow-xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl relative"
@@ -104,7 +105,7 @@ const PhotoGallery = ({ photos, fetchPhotos }: PhotoGalleryProps) => {
                 Add Comment
               </button>
 
-              <div className="mt-4">
+              <div className="mt-4 h-16 overflow-y-scroll border border-dotted rounded-sm">
                 {photo.comments?.map((comment: any, i: number) => (
                   <div key={comment.id} className="text-gray-700 text-sm mb-2">
                     <strong className="text-gray-900">{i + 1}. </strong>

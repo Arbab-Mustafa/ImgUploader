@@ -5,7 +5,7 @@ import PhotoUpload from "./_components/PhotoUpload";
 
 const HomePage = () => {
   interface Photo {
-    id: string;
+    id: number;
     url: string;
     title: string;
   }
