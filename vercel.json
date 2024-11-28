@@ -7,16 +7,16 @@
     }
   ],
   "env": {
-    "DATABASE_URL": "@DATABASE_URL" // Reference to Vercel's environment variable (to be configured in Vercel's UI)
+    "DATABASE_URL": "@DATABASE_URL" // Use Vercel's environment variable setting (Don't hardcode it here)
   },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1" // Automatically handles backend API routes
+      "dest": "/api/$1" // Handles the API routes
     },
     {
       "src": "/(.*)",
-      "dest": "/$1" // This will handle the frontend routes
+      "dest": "/$1" // Handles the frontend routes
     }
   ]
 }
