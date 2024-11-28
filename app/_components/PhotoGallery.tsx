@@ -5,7 +5,11 @@ import { FaTrashAlt } from "react-icons/fa"; // Import delete icon
 import { toast } from "sonner";
 
 interface PhotoGalleryProps {
-  photos: any[]; // Pass photos as prop
+  photos: {
+    id: number;
+    url: string;
+    comments?: { id: number; content: string }[];
+  }[]; // Pass photos as prop
   fetchPhotos: () => void; // Function to fetch photos
 }
 

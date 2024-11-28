@@ -4,7 +4,13 @@ import PhotoGallery from "./_components/PhotoGallery";
 import PhotoUpload from "./_components/PhotoUpload";
 
 const HomePage = () => {
-  const [photos, setPhotos] = useState<any[]>([]);
+  interface Photo {
+    id: string;
+    url: string;
+    title: string;
+  }
+
+  const [photos, setPhotos] = useState<Photo[]>([]);
 
   // Function to fetch photos
   const fetchPhotos = async () => {
