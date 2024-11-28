@@ -2,18 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "next.config.js",
+      "src": "package.json",
       "use": "@vercel/next"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
   "env": {
-    "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNmQyODEzZmYtNWUyNC00N2ZlLWFkMWYtNGFkYTc2MTY2NmU5IiwidGVuYW50X2lkIjoiYjhmZWEwNjEwMDc1YjdiNTdhMTExODIzODFlYmI2M2ViODhkNDlhZmQxOWE4YmZkY2ExMzdmYTg1ZjZmYWE0YiIsImludGVybmFsX3NlY3JldCI6ImFlMTczMzhiLTg2NmMtNGM1OC04MDIwLTI0NTI0MGY3MjUzMCJ9.jQe6FXSdU6HVW7HS6C0PoeJAdhDD23ImbWkka5pI4cY"
+    "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNmQyODEzZmYtNWUyNC00N2ZlLWFkMWYtNGFkYTc2MTY2NmU5IiwidGVuYW50X2lkIjoiYjhmZWEwNjEwMDc1YjdiNTdhMTExODIzODFlYmI2M2ViODhkNDlhZmQxOWE4YmZkY2ExMzdmYTg1ZjZmYWE0YiIsImludGVybmFsX3NlY3JldCI6ImFlMTczMzhiLTg2NmMtNGM1OC04MDIwLTI0NTI0MGY3MjUzMCJ9.jQe6FXSdU6HVW7HS6C0PoeJAdhDD23ImbWkka5pI4cY" // Example: Make sure your DATABASE_URL is set correctly
   }
-  "command": "prisma migrate deploy"
 }
