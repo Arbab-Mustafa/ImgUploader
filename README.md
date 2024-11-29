@@ -1,49 +1,3 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steps to Run the Dockerized Application</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            font-size: 16px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        code {
-            font-family: monospace;
-            background-color: #f4f4f4;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-        }
-        ul {
-            margin-bottom: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .note {
-            font-style: italic;
-            color: #555;
-        }
-        .important {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
     <h1>Steps to Run the Dockerized Application on Any PC</h1>
 
     <p>Follow the steps below to successfully run the Dockerized <strong>img-upload</strong> application on any machine. This guide includes Docker commands for pulling the image, running the container, and accessing the application.</p>
@@ -139,6 +93,3 @@ CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
             <pre><code>docker rmi arbabmustafa/img-upload:v1.0.0</code></pre>
         </li>
     </ul>
-
-</body>
-</html>
