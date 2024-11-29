@@ -1,0 +1,8 @@
+node_modules
+.next/cache
+.env.local
+.env.development
+Dockerfile
+docker-compose.yml
+.dockerignore
+.git

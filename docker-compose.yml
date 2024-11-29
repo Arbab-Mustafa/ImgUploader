@@ -1,0 +1,28 @@
+version: "3"
+services:
+  nextjs-app:
+    build: .
+    ports:
+      - "3000:3000" # Exposes port 3000 for the Next.js app
+    environment:
+      - DATABASE_URL=${DATABASE_URL} # Make sure this is the correct connection string
+
+    depends_on:
+      - postgres # Ensures the app starts after the DB is ready
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:14 # PostgreSQL image
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: prisma
+      POSTGRES_DB: prisma
+    ports:
+      - "5432:5432" # Exposes port 5432 for the PostgreSQL DB
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
