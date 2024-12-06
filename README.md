@@ -2,7 +2,7 @@ Steps to Run the Dockerized Application on Any PC
 
 1. Install Docker
 2. Log in to Docker Hub
-   command =>>> 'docker login '
+   command =>>> 'docker login '.
 
 3. Pull the Docker Image
 
